@@ -13,21 +13,19 @@ const $ = (id) => document.getElementById(id)
 
 // Get the DOM elements
 empId      = $('empId')
-empoyeeId            = $('empoyeeId')
-empName           = $('empName')
-empExt           = $('empExt')
-empEmail           = $('empEmail')
-empDep           = $('empDep')
-calculate       = $('calculate')
-output          = $('output')
-
+empoyeeId  = $('empoyeeId')
+empName    = $('empName')
+empExt     = $('empExt')
+empEmail   = $('empEmail')
+empDep     = $('empDep')
+calculate  = $('calculate')
+output     = $('output')
 
 calculate.addEventListener('click', () => {
     console.log(`ID: ${empId.value}.`)
     console.log(`Name: ${empName.value}.`)
     console.log(`Extension: ${empExt.value}.`)
     console.log(`Email ${empEmail.value}.`)
-    console.log(`Departent ${empDep.value}.`)
-    output.innerHTML = `added employee `
-
+    console.log(`Department ${empDep.value}.`)
+    //output.innerHTML = `added employee `
 })
