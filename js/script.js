@@ -18,14 +18,14 @@ empName    = $('empName')
 empExt     = $('empExt')
 empEmail   = $('empEmail')
 empDep     = $('empDep')
-calculate  = $('calculate')
+addEmployee  = $('addEmployee')
 output     = $('output')
 
-calculate.addEventListener('click', () => {
-    console.log(`ID: ${empId.value}.`)
-    console.log(`Name: ${empName.value}.`)
-    console.log(`Extension: ${empExt.value}.`)
-    console.log(`Email ${empEmail.value}.`)
-    console.log(`Department ${empDep.value}.`)
+addEmployee.addEventListener('click', () => {
+    console.log(`ID: ${empId.value}`)
+    console.log(`Name: ${empName.value}`)
+    console.log(`Extension: ${empExt.value}`)
+    console.log(`Email ${empEmail.value}`)
+    console.log(`Department ${empDep.value}`)
     //output.innerHTML = `added employee `
 })

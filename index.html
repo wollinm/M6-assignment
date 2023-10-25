@@ -16,28 +16,30 @@
 </head>
 <body class="m-4">
     <h1>Employee Management Syste</h1>
-    8-Digit Employee Id<br>
-    <input type="text" id="empId"><br>
-    Full Name<br>
-    <input type="text" id="empName"><br>
-    4-Digit Extension<br>
-    <input type="text" id="empExt"><br>
-    Email<br>
-    <input type="text" id="empEmail"><br>
-    Department<br>
-    <label for="department"></label>
-    <select name="department" id="empDep">
-      <option value="administrative">Administrative</option>
-      <option value="engineering">Engineering</option>
-      <option value="executive">Executive</option>
-      <option value="marketing">Marketing</option>
-      <option value="quality">Quality Assurance</option>
-      <option value="sales">Sales</option>
-    </select>
-  
-    <br>
-    
-    <button id="calculate">Add Employee</button><br><br>
-    <output id="output"></output>
+    <form id="empForm" onsubmit="event.preventDefault()">
+        8-Digit Employee Id<br>
+        <input type="text" id="empId"><br>
+        Full Name<br>
+        <input type="text" id="empName"><br>
+        4-Digit Extension<br>
+        <input type="text" id="empExt"><br>
+        Email<br>
+        <input type="email" id="empEmail"><br>
+        Department<br>
+        <label for="department"></label>
+            <select name="department" id="empDep">
+                <option value="administrative">Administrative</option>
+                <option value="engineering">Engineering</option>
+                <option value="executive">Executive</option>
+                <option value="marketing">Marketing</option>
+                <option value="quality">Quality Assurance</option>
+                <option value="sales">Sales</option>
+            </select>
+            <button id="addEmployee">Add Employee</button><br><br>
+
+        <br>
+    </form>
+         <output id="output"></output>
+
 </body>
 </html>
