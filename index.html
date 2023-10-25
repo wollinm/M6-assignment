@@ -14,8 +14,15 @@
         form            {width: 30%; padding: 20px;}
     </style>
 </head>
+<style>
+.myDiv {
+    border: 3px outset orangered;
+    background-color: lightgrey;
+}
+</style>
 <body class="m-4">
     <h1>Employee Management Syste</h1>
+    <div class="myDiv">
     <form id="empForm" onsubmit="event.preventDefault()">
         8-Digit Employee Id<br>
         <input type="text" id="empId"><br>
@@ -25,7 +32,7 @@
         <input type="text" id="empExt"><br>
         Email<br>
         <input type="email" id="empEmail"><br>
-        Department<br>
+        Department
         <label for="department"></label>
             <select name="department" id="empDep">
                 <option value="administrative">Administrative</option>
@@ -39,5 +46,6 @@
 
         <br>
     </form>
+</div>
 </body>
 </html>
