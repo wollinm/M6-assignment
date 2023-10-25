@@ -5,8 +5,7 @@ let empName        // Employee ID text box
 let empExt         // Employee ID text box
 let empEmail       // Employee ID text box
 let empDep         // Employee ID text box
-let calculate           // THE CALCULATE BUTTON
-let output              // THE OUTPUT TAG
+let addEmployee    
 
 // Helper function to retunr DOM element
 const $ = (id) => document.getElementById(id)
@@ -19,7 +18,6 @@ empExt     = $('empExt')
 empEmail   = $('empEmail')
 empDep     = $('empDep')
 addEmployee  = $('addEmployee')
-output     = $('output')
 
 addEmployee.addEventListener('click', () => {
     console.log(`ID: ${empId.value}`)
